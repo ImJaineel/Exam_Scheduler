@@ -27,6 +27,13 @@ class Exam_scheduler
         exam[0][4]="14:30-15:30";
         exam[0][5]="15:30-16:30";
         exam[0][6]="16:30-17:30";
+        for(int i=1;i<3;i++)
+        {
+            for(int j=1;j<7;j++)
+            {
+                exam[i][j] = "not scheduled";
+            }
+        }
         for(int i=0;i<l;i++)
         {
             System.out.println("Enter name of Subject ");
@@ -47,46 +54,57 @@ class Exam_scheduler
                 b=sc.nextInt();
                 if(b==1)
                 {
-                    if(exam[1][1] == null) 
-                    exam[1][1]=Sub;
+                    if(exam[1][1] == "not scheduled") 
+                    exam[1][1]=Sub+"\t";
                     else{
                     System.out.println("Slot not available");
+                    i--;
                     }
                 }
                 if(b==2)
                 {
-                    if(exam[1][2] == null) 
-                    exam[1][2]=Sub;
-                    else
+                    if(exam[1][2] == "not scheduled") 
+                    exam[1][2]=Sub+"\t";
+                    else{
                     System.out.println("Slot not available");
+                    i--;
+                    }
                 }
                 if(b==3)
                 {
-                    if(exam[1][3] == null) 
-                    exam[1][3]=Sub;
-                    else
+                    if(exam[1][3] == "not scheduled") 
+                    exam[1][3]=Sub+"\t";
+                    else{
                     System.out.println("Slot not available");
+                    i--;
+                    }
                 }
                 if(b==4)
                 {
-                    if(exam[1][4] == null) 
-                    exam[1][4]=Sub;
-                    else
+                    if(exam[1][4] == "not scheduled") 
+                    exam[1][4]=Sub+"\t";
+                    else{
                     System.out.println("Slot not available");
+                    i--;
+                    }
                 }
                 if(b==5)
                 {
-                    if(exam[1][5] == null) 
-                    exam[1][5]=Sub;
-                    else
+                    if(exam[1][5] == "not scheduled") 
+                    exam[1][5]=Sub+"\t";
+                    else{
                     System.out.println("Slot not available");
+                    i--;
+                    }
                 }
                 if(b==6)
                 {
-                    if(exam[1][6] == null) 
-                    exam[1][6]=Sub;
-                    else
+                    if(exam[1][6] == "not scheduled") 
+                    exam[1][6]=Sub+"\t";
+                    else{
                     System.out.println("Slot not available");
+                    i--;
+                    }
                 }
             }
             else if(date == 2)
@@ -101,45 +119,57 @@ class Exam_scheduler
                 b=sc.nextInt();
                 if(b==1)
                 {
-                    if(exam[2][1] == null) 
-                    exam[2][1]=Sub;
-                    else
+                    if(exam[2][1] == "not scheduled") 
+                    exam[2][1]=Sub+"\t";
+                    else{
                     System.out.println("Slot not available");
+                    i--;
+                    }
                 }
                 if(b==2)
                 {
-                    if(exam[2][2] == null) 
-                    exam[2][2]=Sub;
-                    else
+                    if(exam[2][2] == "not scheduled") 
+                    exam[2][2]=Sub+"\t";
+                    else{
                     System.out.println("Slot not available");
+                    i--;
+                    }
                 }
                 if(b==3)
                 {
-                    if(exam[2][3] == null) 
-                    exam[2][3]=Sub;
-                    else
+                    if(exam[2][3] == "not scheduled") 
+                    exam[2][3]=Sub+"\t";
+                    else{
                     System.out.println("Slot not available");
+                    i--;
+                    }
                 }
                 if(b==4)
                 {
-                    if(exam[2][4] == null) 
-                    exam[2][4]=Sub;
-                    else
+                    if(exam[2][4] == "not scheduled") 
+                    exam[2][4]=Sub+"\t";
+                    else{
                     System.out.println("Slot not available");
+                    i--;
+                    }
                 }
                 if(b==5)
                 {
-                    if(exam[2][5] == null) 
-                    exam[2][5]=Sub;
-                    else
+                    if(exam[2][5] == "not scheduled") 
+                    exam[2][5]=Sub+"\t";
+                    else{
                     System.out.println("Slot not available");
+                    i--;
+                    }
                 }
                 if(b==6)
                 {
-                    if(exam[2][6] == null) 
-                    exam[2][6]=Sub;
-                    else
+                    if(exam[2][6] == "not scheduled") 
+                    exam[2][6]=Sub+"\t";
+                    else{
                     System.out.println("Slot not available");
+                    i--;
+                    }
                 }
             }
             else
@@ -152,7 +182,7 @@ class Exam_scheduler
         {
             for(int j=0;j<7;j++)
             {
-                System.out.print("|"+exam[i][j]+" |");
+                System.out.print("|"+exam[i][j]+"\t|");
             }
             System.out.println();
         }
