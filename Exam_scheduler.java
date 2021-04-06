@@ -178,6 +178,11 @@ class Exam_scheduler
             }
         }
         System.out.println("Thank you, your exams are succesfully scheduled");
+        for(int i=0;i<113;i++)
+        {
+            System.out.print("-");
+        }
+        System.out.println();
         for(int i=0;i<3;i++)
         {
             for(int j=0;j<7;j++)
@@ -185,6 +190,10 @@ class Exam_scheduler
                 System.out.print("|"+exam[i][j]+"\t|");
             }
             System.out.println();
+        }
+        for(int i=0;i<113;i++)
+        {
+            System.out.print("-");
         }
     }
 }
